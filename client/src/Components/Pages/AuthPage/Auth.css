@@ -1,0 +1,148 @@
+.Auth-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Auth-Title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.Auth-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.Auth-Input {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fafafa;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Auth-Input:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 5px rgba(0, 122, 255, 0.2);
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1.25rem;
+}
+
+.Error-Message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.Auth-Submit {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+  width: 100%;
+}
+
+.Auth-Submit:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.Auth-Submit:active {
+  background-color: #003f8d;
+  transform: translateY(0);
+}
+
+.Auth-Footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.Auth-Footer .AuthLink {
+  color: #007aff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .Auth-Title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .Auth-Form {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .Auth-Input,
+  .password-input-container {
+    width: 100%;
+  }
+
+  .password-input-container {
+    width: 100%;
+  }
+
+  .password-toggle-btn {
+    right: 12px;
+  }
+
+  .Auth-Submit {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .Auth-Footer {
+    font-size: 0.9rem;
+  }
+
+  .Auth-Form {
+    flex-direction: column;
+  }
+
+  .Auth-Input {
+    width: 100%;
+  }
+}

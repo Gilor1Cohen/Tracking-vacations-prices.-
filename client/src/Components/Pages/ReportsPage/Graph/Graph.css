@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .nivo-axis text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nivo-axis text {
+    font-size: 10px;
+  }
+
+  .nivo-bar rect {
+    width: 8px;
+  }
+}

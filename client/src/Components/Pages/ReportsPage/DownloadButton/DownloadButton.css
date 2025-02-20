@@ -1,0 +1,26 @@
+.download-csv {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: perspective(600px) translateZ(0);
+}
+
+.download-csv:active {
+  background-color: #001f7f;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: perspective(600px) translateZ(10px) rotateX(0deg) rotateY(0deg)
+    scale(0.95);
+}
+
+.download-csv:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(0, 122, 255, 0.5),
+    inset 0 0 15px rgba(255, 255, 255, 0.5);
+}

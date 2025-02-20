@@ -1,0 +1,25 @@
+#HomePage-Section {
+  display: flex;
+  min-height: 100vh;
+  color: #333;
+}
+
+@media screen and (max-width: 1024px) {
+  #HomePage-Section {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #HomePage-Section {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #HomePage-Section {
+    padding: 0;
+  }
+}
